@@ -18,15 +18,18 @@
             <Setter Property="Margin" Value="0,0,10,0"/>
             <Setter Property="FontSize" Value="18"/>
             <Setter Property="HorizontalAlignment" Value="Right"/>
-                <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
         </Style>
     </Window.Resources>
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="20*"/>
             <RowDefinition Height="80*"/>
         </Grid.RowDefinitions>
-        <WrapPanel Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center">
+        <WrapPanel Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="200,10,200,9">
             <TextBlock FontSize="10" Text="Select Lenguage: "/>
             <ComboBox Name="ddLanguage" FontSize="10" Width="100" SelectionChanged="DdLanguage_SelectionChanged" >
                 <ComboBoxItem IsSelected="True" Name="English">English</ComboBoxItem>
