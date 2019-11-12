@@ -29,5 +29,10 @@ namespace MultiLenguaje
         {
 
         }
+
+        private void DdLanguage_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }
